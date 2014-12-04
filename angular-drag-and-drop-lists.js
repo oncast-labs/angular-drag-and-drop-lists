@@ -154,8 +154,10 @@ angular.module('dndLists', [])
        * Workaround to make element draggable in IE9
        */
       element.on('selectstart', function() {
-        if (this.dragDrop) this.dragDrop();
-        return false;
+        if (this.dragDrop) {
+          this.dragDrop();
+          return false;
+        }
       });
     };
   }])
