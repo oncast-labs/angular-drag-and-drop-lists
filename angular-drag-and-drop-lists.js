@@ -378,7 +378,7 @@ angular.module('dndLists', [])
         var targetSize = horizontal ? targetNode.offsetWidth : targetNode.offsetHeight;
         var targetPosition = horizontal ? targetNode.offsetLeft : targetNode.offsetTop;
         targetPosition = relativeToParent ? targetPosition : 0;
-        return mousePointer < targetPosition + targetSize / 2;
+        return mousePointer < targetPosition + targetSize / 3;
       }
 
       /**
